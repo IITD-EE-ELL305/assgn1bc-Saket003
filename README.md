@@ -68,15 +68,15 @@ This will make the later part of this assignment easier for you.
   - [x] Run the branch instruction to make the PC jump to a positive and negative offset
   - [x] You can simply check the value of _PC_ to see if your circuit works correctly
   - [x] **Commit and push to Github with message "beq instruction"**
-- [ ] call instruction
-  - [ ] Add the _ra_ register which will hold PC+4; The remaining hardware is the same as for branch
-  - [ ] Add appropriate control signals to enable write to _ra_ and choose the new _PC_
-- [ ] ret instruction
-  - [ ] You simply have to load _ra_ into PC, so add a connection from output of _ra_ tp input of _PC_ through the Mux (you will have to expand the Mux and modify the control signals)
-- [ ] Test
-  - [ ] Load 2 numbers in the regfile, then call a function that will add them and store result in regfile and return, then store that result in data memory
-  - [ ] Check data memory for the correct result, and also verify that the PC behaves correctly through the call and return instructions
-  - [ ] **Commit and push to Github with message "call and ret instructions"**
+- [x] call instruction
+  - [x] Add the _ra_ register which will hold PC+4; The remaining hardware is the same as for branch
+  - [x] Add appropriate control signals to enable write to _ra_ and choose the new _PC_
+- [x] ret instruction
+  - [x] You simply have to load _ra_ into PC, so add a connection from output of _ra_ tp input of _PC_ through the Mux (you will have to expand the Mux and modify the control signals)
+- [x] Test
+  - [x] Load 2 numbers in the regfile, then call a function that will add them and store result in regfile and return, then store that result in data memory
+  - [x] Check data memory for the correct result, and also verify that the PC behaves correctly through the call and return instructions
+  - [x] **Commit and push to Github with message "call and ret instructions"**
 3. Add support for _nop_ and _halt_ instructions
 - [ ] Do you need any hardware modification?
 - [ ] Modify the control signals appropriately for _nop_
