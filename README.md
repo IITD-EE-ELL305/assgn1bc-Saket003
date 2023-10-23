@@ -46,7 +46,7 @@ This will make the later part of this assignment easier for you.
   - [x] You want to write back the data from that address, so you will have to add a Mux with ALU and DMEM_R_data as inputs and add an appropriate control signal to choose which one to write back
   - [x] Appropriately modify the writeback path
   - [x] **Commit and push to Github with message "load instruction"**
-- [ ] store
+- [x] store
   - [x] To store rd data into memory, it has to be connected to the write port of DMEM
   - [x] Provide appropriate control signal to correctly enable DMEM memory write for store instruction
   - [x] Modify the control circuit to generate the control signal, and the main circuit to use the modified control circuit
@@ -78,11 +78,11 @@ This will make the later part of this assignment easier for you.
   - [x] Check data memory for the correct result, and also verify that the PC behaves correctly through the call and return instructions
   - [x] **Commit and push to Github with message "call and ret instructions"**
 3. Add support for _nop_ and _halt_ instructions
-- [ ] Do you need any hardware modification?
-- [ ] Modify the control signals appropriately for _nop_
-- [ ] With the _halt_ instruction, the _PC_ stops incrementing. Do you need hardware modification?
-- [ ] Add appropriate control signals
-- [ ] **Commit and push to Github with message "halt and nop instruction"**
+- [x] Do you need any hardware modification?
+- [x] Modify the control signals appropriately for _nop_
+- [x] With the _halt_ instruction, the _PC_ stops incrementing. Do you need hardware modification?
+- [x] Add appropriate control signals
+- [x] **Commit and push to Github with message "halt and nop instruction"**
 - [ ] Write a small test program for all your instructions:
   - [ ] Load two numbers into r1 and r2
   - [ ] Add the two numbers and store result in r3
