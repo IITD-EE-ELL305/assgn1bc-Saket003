@@ -519,9 +519,13 @@
       <a name="font" val="SansSerif plain 20"/>
       <a name="text" val="Write back"/>
     </comp>
-    <comp lib="7" loc="(49,150)" name="Text">
+    <comp lib="7" loc="(45,150)" name="Text">
       <a name="font" val="SansSerif plain 20"/>
       <a name="text" val="Fetch"/>
+    </comp>
+    <comp lib="7" loc="(847,465)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="Immediate can be increased by 2 bits, after considering that 2 LSB are 0"/>
     </comp>
     <comp loc="(1000,180)" name="REGFILE"/>
     <comp loc="(1020,710)" name="CTRL_COMBI"/>
@@ -966,9 +970,12 @@
       <a name="addrWidth" val="10"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 10 8
-60 44 0 0 60 84 0 0
-d 0 0 0 60 44 0 0
-1f 0 0 0 60 84
+60 44 0 0 a0 84 0 0
+c0 84 0 0 e5 4c 1 0
+30 0 2 0 20 d1 ff ff
+33 0 3 0 6e 15 0 0
+1f 0 0 0 2f 15 0 0
+14
 </a>
       <a name="line" val="quad"/>
     </comp>
@@ -3731,7 +3738,7 @@ d 0 0 0 60 44 0 0
       <a name="value" val="0x0"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(110,490)" name="Constant">
+    <comp lib="0" loc="(110,480)" name="Constant">
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(110,70)" name="Pin">
@@ -4109,27 +4116,27 @@ d 0 0 0 60 44 0 0
       <a name="halign" val="left"/>
       <a name="text" val="Load Select (LDSel)"/>
     </comp>
-    <comp lib="7" loc="(826,504)" name="Text">
+    <comp lib="7" loc="(825,500)" name="Text">
       <a name="font" val="SansSerif plain 20"/>
       <a name="halign" val="left"/>
       <a name="text" val="Store Select (STSel)"/>
     </comp>
-    <comp lib="7" loc="(826,594)" name="Text">
+    <comp lib="7" loc="(825,590)" name="Text">
       <a name="font" val="SansSerif plain 20"/>
       <a name="halign" val="left"/>
       <a name="text" val="BEQ Select (BEQSel)"/>
     </comp>
-    <comp lib="7" loc="(826,794)" name="Text">
+    <comp lib="7" loc="(825,790)" name="Text">
       <a name="font" val="SansSerif plain 20"/>
       <a name="halign" val="left"/>
       <a name="text" val="Call Select (CALLSel)"/>
     </comp>
-    <comp lib="7" loc="(826,884)" name="Text">
+    <comp lib="7" loc="(825,880)" name="Text">
       <a name="font" val="SansSerif plain 20"/>
       <a name="halign" val="left"/>
       <a name="text" val="Ret Select (RETSel)"/>
     </comp>
-    <comp lib="7" loc="(826,974)" name="Text">
+    <comp lib="7" loc="(825,970)" name="Text">
       <a name="font" val="SansSerif plain 20"/>
       <a name="halign" val="left"/>
       <a name="text" val="Halt Select (HALTSel)"/>
@@ -4159,7 +4166,7 @@ d 0 0 0 60 44 0 0
     <wire from="(100,340)" to="(110,340)"/>
     <wire from="(100,70)" to="(110,70)"/>
     <wire from="(110,470)" to="(160,470)"/>
-    <wire from="(110,490)" to="(160,490)"/>
+    <wire from="(110,480)" to="(160,480)"/>
     <wire from="(1120,10)" to="(1120,190)"/>
     <wire from="(1120,200)" to="(1120,290)"/>
     <wire from="(1120,300)" to="(1120,380)"/>
